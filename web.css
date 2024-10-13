@@ -1,0 +1,140 @@
+* {  
+    margin: 0; /* Reset default margin */  
+    padding: 50;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: 'Poppins', sans-serif; /* Change font family */  
+    background: linear-gradient(to bottom, #aa776a, #feb47b);  
+    color: white;  
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 5px;  
+    position: relative; /* Ensure the header is positioned correctly */  
+    z-index: 10; /* Maintain it above the hero */  
+}  
+
+.logo {  
+    font-size: 35px;  
+    font-weight: bold;  
+}  
+
+.navbar {  
+    padding-right: 50px; /* Adjust the right margin */  
+}  
+
+.navbar a {  
+    margin: 5 10px; /* Space between navigation items */  
+}  
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+    align-items: center; /* Center items vertically */  
+}  
+
+nav ul li {  
+    margin-left: 70px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+    font-size: 16px;  
+    font-weight: 600; /* Adjust font weight for bolder text */  
+    transition: color 0.3s; /* Smooth color change on hover */  
+}  
+
+nav ul li a:hover {  
+    color: #ccc8b8; /* Change color on hover */  
+}  
+
+.hero {  
+    position: relative; /* Make this a relative container */  
+    text-align: center;  
+    height: 100vh; /* Set height for the hero section */  
+    overflow: hidden; /* To prevent overflow */  
+}  
+
+.hero-image {  
+    position: absolute; /* Position it absolutely */  
+    top: 0;  
+    left: 0;  
+    width: 100%; /* Responsive image */  
+    height: 100%; /* Cover full height */  
+    object-fit: cover; /* Ensure the image covers without distortion */  
+    z-index: 1; /* Set lower z-index to put it behind */  
+}  
+
+.hero h1 {  
+    position: relative; /* Position relative to the hero */  
+    z-index: 2; /* Higher z-index to bring it in front */  
+    margin-top: 15%; /* Adjust this to position vertically */  
+    font-size: 3em; /* Adjust the size */  
+    font-weight: 600; /* Same weight as Poppins */  
+    color: white; /* Text color */  
+}  
+
+.hero p {  
+    position: relative; /* Position relative to the hero */  
+    z-index: 2; /* Higher z-index to bring it in front */  
+    margin-top: 2%; /* Adjust as needed */  
+    font-size: 1.2em; /* Adjust paragraph size */  
+    color: white; /* Text color */  
+}  
+
+.buttons {  
+    position: relative; /* Position relative to the hero */  
+    z-index: 2; /* Higher z-index to bring it in front */  
+    margin-top: 2%; /* Adjust to position buttons */  
+}  
+
+.btn {  
+    background: transparent;  
+    border: 2px solid white;  
+    color: white;  
+    padding: 10px 20px;  
+    margin: 0 10px;  
+    text-decoration: none;  
+    transition: background 0.3s, color 0.3s;  
+}  
+
+.btn:hover {  
+    background: white;  
+    color: #e6c4bc;  
+}  
+
+.btn-primary {  
+    background: #ff7e5f;  
+    border: none;  
+    color: white;  
+}  
+
+.btn-primary:hover {  
+    background: #feb47b;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+.btn-action {  
+    background: #ff007f; /* Bright pink background */  
+    color: white;  
+    padding: 15px 20px;      
+    text-decoration: none;  
+    border-radius: 5px;  
+    transition: background 0.3s;  
+    margin-left: 10px;  
+    font-weight: 600; /* Adjust font weight for the button */  
+}  
+
+.btn-action:hover {  
+    background: #ff5e99;  
+}
